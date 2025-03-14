@@ -1,7 +1,7 @@
 # The London Stage Database
 
 ## About
-This repository stores and versions the MariaDB relational database underpinning the [London Stage Database](https://londonstagedb.uoregon.edu/) project.
+This repository stores and versions the MariaDB SQL database underpinning the [London Stage Database](https://londonstagedb.uoregon.edu/) project.
 
 ## Files
 
@@ -10,11 +10,15 @@ The authoritative version of the London Stage Database, matches the version runn
 * `London.sql.zip`
     - A logical backup of the database created using [mysqldump](https://mariadb.com/kb/en/mysqldump/).
 
-### Secondary Formats
+### Secondary Database Formats
 Derivative formats are maintained concurrently. The code that generates these from the SQL database is in the [website](https://github.com/LondonStageDB/website) repository. 
 * `LondonStageFull.csv.zip`
 * `LondonStageFull.json.zip`
 * `LondonStageFull.xml.zip`
+
+### Documentation
+* `docs/schema.png` 
+    - Updated entity-relationship diagram
 
 ### Scripts
 For reproducibility, these scripts document 
@@ -27,5 +31,4 @@ They are applied to **v1.0** of the database in ascending order.
 * `scripts/02_add_constraints.sql`
     - Applies foreign key constraints 
 
-Researchers interested in data are encouraged to download the most recent version of the database
-in their preferred format instead.
+Researchers interested in data are encouraged to download the most recent version of the database in their preferred format instead.
