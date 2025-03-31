@@ -14,11 +14,11 @@ The authoritative version of the London Stage Database, matches the version runn
 These derivative formats are maintained concurrently. The code that generates these flattened structures by 
 merging together several tables from the SQL database is in the [website](https://github.com/LondonStageDB/website) repository. 
 * `LondonStageFull.csv.zip`
-- A comma-delimited file with one **Event** per row.
+    - A comma-delimited file with one **Event** per row.
 * `LondonStageFull.json.zip`
-- A serialized array with one **Event** per record.
+    - A serialized array with one **Event** per record.
 * `LondonStageFull.xml.zip`
-- An XML markup file with one item per **Event**.
+    - An XML markup file with one item per **Event**.
 
 
 ### Documentation
