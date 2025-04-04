@@ -2,7 +2,7 @@
 
 ## 1.1 
 
-Released April [REPLACE], 2025.
+Released April 4th, 2025.
 
 The first release of the database after active development resumed in 2025. This revision incorporated minor changes that lay the foundation for future development work.
 
