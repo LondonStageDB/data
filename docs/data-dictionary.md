@@ -25,16 +25,16 @@ Stores information about authors and their dates of flourishing.
 | AuthNameClean   | varchar(50)  | NULL, FULLTEXT INDEX | cleaned author name, indexed for faceted search | `John Suckling` |
 
 ## AuthorVariant
-Stores mappings between authors and variant spellings of their names.
+Stores mappings between authors and variant spellings of their names. 
 
-| Column | Type    | Constraints  | Description | Example |
+| Column | Type | Constraints  | Description | Example |
 |----------------|--------------|-----------|-------------|----------------|
 | AuthId | int(6) | NOT NULL | AuthId |  `13` |
 | VariantName   | varchar(50)  | NOT NULL  | variant name spelling | `Sir William D'Avenant` |
 | VarNameClean  | varchar(50)  | NULL  | normalized variant spelling |  `Sir William DAvenant` |
 
 ## Cast
-Stores information about casting lists from *The London Stage*.
+Stores information about cast lists and roles from *The London Stage*.
 
 | Column | Type | Constraints | Description | Example |
 |--------------------|-----------|------------------|--------------------|----------------|
@@ -91,7 +91,7 @@ Stores information about theatres mentioned in each volume of *The London Stage*
 | TheatreName |char(100)| NOT NULL, FULLTEXT INDEX | full theatre name from *The London Stage* | `Covent Garden` |
 
 ## WorkAuthMaster
-Stores mappings between works, authors, and the source of those authorship inferences.
+Stores mappings between works, authors, and the source of those authorship inferences. Researched by Emma Hallock.
 
 | Column | Type | Constraints | Description |Example |
 |-----------------------|---------------|-------------|-------------|----------------|
@@ -102,7 +102,8 @@ Stores mappings between works, authors, and the source of those authorship infer
 | TitleClean | text | NULL, FULLTEXT INDEX | cleaned title, indexed for searching | `The Earl of Essex` |
 
 ## Works
-Stores information about works mentioned in *The London Stage* along with notes about where that information came from. Compiled by Emma Hallock.
+Stores information about works mentioned in *The London Stage*.
+Researched by Emma Hallock.
 
 | Column Name | Data Type | Constraints | Description |Example Value |
 |---------------|---------------|-------------|-------------------------------|----------------|
@@ -120,8 +121,7 @@ Stores information about works mentioned in *The London Stage* along with notes 
 
 
 ## WorksTCP
-Stores matches between LSDB works, keyed by WorkId, and TCP files, keyed by TCPId. 
-Organized as one match perrow. Manually curated by Michele Pflug.
+Stores matches between LSDB works and TCP files, with one match per row. Researched by Michele Pflug.
 
 | Column | Type | Constraints  | Description | Example |
 |-----------------------|---------------|-------------|-------------|----------------|
@@ -131,9 +131,7 @@ Organized as one match perrow. Manually curated by Michele Pflug.
 
 
 ## TCP
-Stores metadata for the EEBO-TCP XML files linked to peformances in the database, one file per row. All fields except the ShortTitle and ShortTitleClean columns are derived from the P4 XML headers of each file. 
-
-The ShortTitle and ShortTitleClean columns were extracted from the [English Short Title Catalogue (ESTC)](https://datb.cerl.org/estc) for purposes of providing an accepted short title for web interfaces.
+Stores metadata for the EEBO-TCP XML files linked to peformances in the database, one file per row. All fields except the ShortTitle and ShortTitleClean columns are derived from the TEI-P4 XML headers of each file. The ShortTitle and ShortTitleClean columns were extracted from the [English Short Title Catalogue (ESTC)](https://datb.cerl.org/estc) for purposes of providing an accepted short title for web interfaces. Compiled by Erin M. Winter.
 
 | Column Name | Type  | Constraints  | Description | Example |
 |------------|-------|-------------|--------------------------|----------------|
@@ -159,7 +157,7 @@ The ShortTitle and ShortTitleClean columns were extracted from the [English Shor
 | ShortTitleClean | varchar(388)  | NOT NULL | ShortTitle with end punctuation stripped | `Three weeks after marriage` |
 
 ## WorksVariant
-Stores mappings between works and their variant titles.s
+Stores mappings between works and their variant titles, researched by Emma Hallock.
 
 | Column | Type | Constraints | Description | Example |
 |------------|-------|-------------|--------------------------|----------------|
