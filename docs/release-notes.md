@@ -2,7 +2,10 @@
 
 ## 2.0
 
-A major release of the database that adds two new tables to serve XML files from the [Text Creationship Partnership](https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/).
+Released October 8th, 2025.
+
+A major release of the database that adds two new tables to serve XML files from the [Text Creationship Partnership](https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/) and incorporates corrections
+to the Works and Author tables.
 
 ### Enhancements
 * Adds the TCP and WorksTCP tables to the database.
@@ -10,8 +13,11 @@ A major release of the database that adds two new tables to serve XML files from
 * Removes the unused WorksBak and AuthTemp tables.
 
 ### Bug fixes
+* 
 
-### 
+### Documentation
+* Adds a new data dictionary to the `docs/` folder of this repository.
+
 ## 1.1 
 
 Released April 4th, 2025.
