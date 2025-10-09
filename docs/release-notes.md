@@ -11,18 +11,20 @@ The corrections reflect a mixture of systematic and ad-hoc fixes to issues ident
 
 ### Enhancements
 * Adds the TCP and WorksTCP tables to the database.
-* Add foreign key constraints linking TCP and WorksTCP tables to existing tables.
+* Adds foreign key constraints linking TCP and WorksTCP tables to existing tables.
 * Removes the unused WorksBak and AuthTemp tables.
 * Updates the Author table with new Authors.
     - Add birth and death dates for some authors.
 * Adds newly identified Works to the Works table.
-    - Adds publication dates and known sources to some works.
+    - Adds publication dates and known sources to some Works.
+Adds curated variant titles for some Works to WorksVariant to support better related work retrieval.
 * Adds curated WorkIds for some Performances for better related work retrieval.
 
 ### Bug fixes
-* Consolidates duplicate Works and updates associated pointers in Authors, WorkAuthMaster, and Performances tables.
+* Consolidates duplicate Works and updates associated pointers in in Authors, WorkAuthMaster,
+WorksVariant, and Performances tables.
 * Corrects WorkIds for some Performances to reflect further research and verification.
-* Explicit utf8 encoding for all tables.
+* Enforces utf-8 encoding for all tables.
 
 ### Documentation
 * Adds a new data dictionary to the `docs/` folder of this repository.
