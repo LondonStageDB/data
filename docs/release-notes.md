@@ -17,11 +17,11 @@ The corrections reflect a mixture of systematic and ad-hoc fixes to issues ident
     - Add birth and death dates for some authors.
 * Adds newly identified Works to the Works table.
     - Adds publication dates and known sources to some Works.
-Adds curated variant titles for some Works to WorksVariant to support better related work retrieval.
+* Adds curated variant titles for some Works to WorksVariant to support better related work retrieval.
 * Adds curated WorkIds for some Performances for better related work retrieval.
 
 ### Bug fixes
-* Consolidates duplicate Works and updates associated pointers in in Authors, WorkAuthMaster,
+* Consolidates duplicate Works and updates associated pointers in Authors, WorkAuthMaster,
 WorksVariant, and Performances tables.
 * Corrects WorkIds for some Performances to reflect further research and verification.
 * Enforces utf-8 encoding for all tables.
