@@ -2,21 +2,31 @@
 
 ## 2.0
 
-Released October 8th, 2025.
+Released October 9th, 2025.
 
 A major release of the database that adds two new tables to serve XML files from the [Text Creationship Partnership](https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/) and incorporates corrections
-to the Works and Author tables.
+to the Works and Author tables. 
+
+The corrections reflect a mixture of systematic and ad-hoc fixes to issues identified by LSDB researchers while incorporating TCP data; further correction of known issues is planned. Verify key details against primary source records whenever possible.
 
 ### Enhancements
 * Adds the TCP and WorksTCP tables to the database.
 * Add foreign key constraints linking TCP and WorksTCP tables to existing tables.
 * Removes the unused WorksBak and AuthTemp tables.
+* Updates the Author table with new Authors.
+    - Add birth and death dates for some authors.
+* Adds newly identified Works to the Works table.
+    - Adds publication dates and known sources to some works.
+* Adds curated WorkIds for some Performances for better related work retrieval.
 
 ### Bug fixes
-* 
+* Consolidates duplicate Works and updates associated pointers in Authors, WorkAuthMaster, and Performances tables.
+* Corrects WorkIds for some Performances to reflect further research and verification.
+* Explicit utf8 encoding for all tables.
 
 ### Documentation
 * Adds a new data dictionary to the `docs/` folder of this repository.
+* Updates `docs/schema.png` to reflect new table structure.
 
 ## 1.1 
 
