@@ -1,5 +1,12 @@
 # London Stage Database: Release Notes
 
+## 2.1
+
+Released June _, 2026.
+
+A major release that adds WorkIds to thousands of performances in the
+Performance table and significantly improves the 
+
 ## 2.0
 
 Released October 9th, 2025.
