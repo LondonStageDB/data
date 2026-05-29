@@ -17,7 +17,9 @@ Stores information about authors and their dates of flourishing.
 | Column| Type | Constraints | Description | Example |
 |------------------|-----------|-------------------|-------------|------------|
 | AuthId   | int(6) | PRIMARY KEY, NOT NULL  | unique author identifier | `1` |
-| AuthName  | varchar(50)  | NOT NULL  | name in "First Last" form  | `John Suckling`    |
+| AuthName  | varchar(50)  | NOT NULL  | name in "First Last" form  | `John Suckling` |
+| WikidataId | varchar(20) | NULL | Wikidata identifier | `Q2339246` |
+| URL | varchar(5) | NULL | Wikidata URL | `https://www.wikidata.org/wiki/Q2339246` | 
 | StartDate | varchar(20)  | NOT NULL  | birth date or earliest known flourish date | `1609` |
 | StartType  | varchar(15)  | NOT NULL  | type of start date, flourishing, baptism, birth | `baptism` |
 | EndDate | varchar(20)  | NOT NULL | death date or earliest known flourish date  |`1641?` |
@@ -127,7 +129,7 @@ Stores matches between LSDB works and TCP files, with one match per row. Researc
 |-----------------------|---------------|-------------|-------------|----------------|
 | TCPId | varchar(11) | NOT NULL, PRIMARY KEY (composite) | TCP project identifier  | `K044879.000` |
 | WorkId  | int(4)  | NOT NULL, PRIMARY KEY (composite) | LSDB WorkId | `13` |
-| MatchType | varchar(10) | NULL  | Type of match, `collection` indicates a match to a part of a collection  | `match` |
+| MatchType | varchar(10) | NOT NULL | Type of match, `collection` indicates a match to a part of a collection  | `match` |
 
 
 ## TCP

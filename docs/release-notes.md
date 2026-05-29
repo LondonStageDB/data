@@ -2,10 +2,25 @@
 
 ## 2.1
 
-Released June _, 2026.
+Released June 2, 2026.
 
-A major release that adds WorkIds to thousands of performances in the
-Performance table and significantly improves the 
+A minor release that adds WorkIds to thousands of performances in the
+Performance table, significantly improving the accuracy of the 
+Related Works algorithm. Improves interoperability among
+the London Stage Database and other theatrical datasets.
+
+### Enhancements
+* Adds WorkIds to 4184 performances in the Performances table.
+* Adds the WikidataId and URL fields to the Author table.
+* Amends 43 authorship attributions in the WorkAuthMaster table.
+* Corrects spacing, transcription, and spelling errors in the titles of 648 performances in Performances.
+
+### Bug fixes
+* Removes extra white space from 3446 rows in the Cast table.
+* Corrects titles related to Handel's Messiah in Works.
+* Adds missing MatchType values to 33 rows in WorksTCP.
+* Adds 9 variants to the AuthorVariant table.
+* Removes 3 disqualified entries (not theatrical works) from the TCP table.
 
 ## 2.0
 
