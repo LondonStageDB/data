@@ -27,7 +27,7 @@ PerformanceTitle and PerfTitleClean fields of 648 performances.
 ### Contributors
 * Mattie Burkert
 * Erin Winter
-* Quyn-Tran Le
+* Quynh-Tran Le
 * Ceilidh McCallum
 * Rose Ruhnke
 * Chelsea Phillips
