@@ -32,8 +32,8 @@ For reproducibility, these scripts document
 the SQL commands executed to increment or "upgrade" the database from 1.0 to 1.1.
 They are applied to **v1.0** of the database in ascending order.
 
-#### v2.0
-Because the corrections made to the database between versions 1.1 and 2.0 were so substantial, impacting thousands of rows, we have chosen not to provide SQL scripts to upgrade 1.1 to 2.0. 
+Because the corrections made to the database after versions 1.1 were so substantial, impacting thousands of rows, we have chosen not to provide SQL scripts to upgrade 1.1 to 2.0, or from
+2.0 to 2.1. 
 
 #### v1.1
 * `scripts/01_constraint_prep.sql`

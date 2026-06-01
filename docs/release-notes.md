@@ -1,5 +1,37 @@
 # London Stage Database: Release Notes
 
+## 2.1
+
+Released June 1, 2026.
+
+A minor release that adds WorkIds to thousands of performances in the
+Performance table, significantly improving the accuracy of the 
+Related Works algorithm. Improves interoperability among
+the London Stage Database and other theatrical datasets.
+
+### Enhancements
+* Adds WorkIds to 4184 performances in the Performances table.
+* Adds the WikidataId and URL fields to the Author table in preparation for a future 
+new feature.
+* Amends 43 authorship attributions in the WorkAuthMaster table.
+* Corrects spacing, transcription, and spelling errors in the 
+PerformanceTitle and PerfTitleClean fields of 648 performances.
+
+### Bug fixes
+* Removes extra white space from 3446 rows in the Cast table.
+* Corrects titles related to Handel's Messiah in Works.
+* Adds missing MatchType values to 33 rows in WorksTCP.
+* Adds 9 variants to the AuthorVariant table.
+* Removes 3 disqualified entries (not theatrical works) from the TCP table.
+
+### Contributors
+* Mattie Burkert
+* Erin Winter
+* Quynh-Tran Le
+* Ceilidh McCallum
+* Rose Ruhnke
+* Chelsea Phillips
+
 ## 2.0
 
 Released October 9th, 2025.
@@ -30,6 +62,11 @@ WorksVariant, and Performances tables.
 * Adds a new data dictionary to the `docs/` folder of this repository.
 * Updates `docs/schema.png` to reflect new table structure.
 
+### Contributors
+* Michele Pflug
+* Mattie Burkert
+* Erin Winter
+
 ## 1.1 
 
 Released April 4th, 2025.
@@ -44,3 +81,7 @@ The first release of the database after active development resumed in 2025. This
 * Adds foreign key constraints between relational database tables. 
     - For example, it is no longer possible for Events to be held at a Theatre that does not exist in the Theatre table.
 * These constraints will prevent the addition of values to one table that conflict with information in a corresponding table, a necessary safeguard as we expand the database.
+
+### Contributors
+* Erin Winter
+* Mattie Burkert
