@@ -1,5 +1,19 @@
 # London Stage Database: Release Notes
 
+## 2.2
+
+Released November 25, 2026.
+
+A minor release that adds corrects and standardizes thousands of cast
+entries in the Cast table.
+
+### Enhancements
+* Adjusts spacing, spelling, and capitalization for 10784 PerformerClean
+values and 8420 RoleClean values in the Cast table. 
+
+### Contributors
+* Mattie Burkert
+
 ## 2.1
 
 Released June 1, 2026.
